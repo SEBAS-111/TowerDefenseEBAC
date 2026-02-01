@@ -4,17 +4,21 @@ public class objetivo : MonoBehaviour
 {
 
     public int vida = 100;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+
+    public delegate void ObjetivoDestruido();
+    public event ObjetivoDestruido EnObjetivoDestruido;
+
 
     // Update is called once per frame
     void Update()
     {
         if (vida <= 0)
         {
+
+            if (EnObjetivoDestruido != null)
+            {
+                EnObjetivoDestruido();
+            }
             Destroy(this.gameObject);
         }
 
