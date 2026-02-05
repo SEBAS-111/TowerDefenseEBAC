@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: character (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 07add036f5338804582bd0e3c7fe76c6, type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 07add036f5338804582bd0e3c7fe76c6, type: 3}
       propertyPath: m_Controller
       value: 
@@ -176,4 +180,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Enemigo
   objetivo: {fileID: 0}
   vida: 100
+  "_da\xF1o": 5
+  recursosGanados: 200
+  referenciaAdminJuego: {fileID: 0}
+  referenciaSpawner: {fileID: 0}
   Anim: {fileID: 0}

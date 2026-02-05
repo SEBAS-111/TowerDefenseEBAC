@@ -355,7 +355,8 @@ Transform:
   m_LocalPosition: {x: -0.007842821, y: 1.9199895, z: 2.0714288}
   m_LocalScale: {x: 2.5816834, y: 2.2314289, z: 1.4781449}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 502924192398976100}
   m_Father: {fileID: 5933727605718373016}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!33 &5210131080671574239
@@ -434,6 +435,37 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!1 &5086687603145010227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 502924192398976100}
+  m_Layer: 0
+  m_Name: Punta1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &502924192398976100
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5086687603145010227}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.008029077, y: 1.07312, z: 0.0879409}
+  m_LocalScale: {x: 0.55334884, y: 0.67652357, z: 0.62155795}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 151434347764083548}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6434615960617895138
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,6 +475,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 91705863183191988}
+  - component: {fileID: 5098416361178091970}
   m_Layer: 0
   m_Name: Torre5
   m_TagString: Untagged
@@ -468,6 +501,22 @@ Transform:
   - {fileID: 5933727605718373016}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5098416361178091970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6434615960617895138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e93a4265b56f38b4e9a6ef4a4ba7817f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemigo: {fileID: 0}
+  prefabBala: {fileID: 3476195874572930455, guid: 936b8c141dd6d954f9d8e78fb5925142, type: 3}
+  "puntasCa\xF1on":
+  - {fileID: 5086687603145010227}
 --- !u!1 &9110436220238768265
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class objetivo : MonoBehaviour
+public class objetivo : MonoBehaviour, IAtancable
 {
 
     public int vida = 100;
