@@ -97,6 +97,8 @@ public class AdminTorres : MonoBehaviour
             posParaInstanciar.y += 0.5f;
             GameObject torreInstanciada = Instantiate<GameObject>(prefabsTorres[indiceTorre], posParaInstanciar, Quaternion.identity);
             torreInstanciada.transform.SetParent(plataforma.transform);
+
+            torresInstanciadas.Add(torreInstanciada);
         }
 
     }

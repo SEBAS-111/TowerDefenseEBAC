@@ -16,7 +16,7 @@ public class EnemigoBase : MonoBehaviour, IAtacante, IAtancable
 
     private void OnEnable()
     {
-        objetivo = GameObject.Find("Objetivo");
+        objetivo = GameObject.Find("objetivo");
         referenciaAdminJuego = GameObject.Find("AdminJuego").GetComponent<AdminJuego>();
         referenciaSpawner = GameObject.Find("SpawnerEnemigo").GetComponent<SpawnerEnemigo>();
         objetivo.GetComponent<objetivo>().EnObjetivoDestruido += Detener;
