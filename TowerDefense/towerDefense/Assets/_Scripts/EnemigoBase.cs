@@ -57,7 +57,7 @@ public class EnemigoBase : MonoBehaviour, IAtacante, IAtancable
         if (collision.gameObject.tag == "Objetivo")
         {
             Anim.SetBool("isMoving", false);
-            Anim.SetTrigger("intObjetiveReache");
+            Anim.SetTrigger("intObjetiveReache", 1);
         }
     }
 
