@@ -24,7 +24,10 @@ public class EnemigoBase : MonoBehaviour, IAtacante, IAtancable
 
     private void OnDisable()
     {
-        objetivo.GetComponent<objetivo>().EnObjetivoDestruido -= Detener;
+        if (objetivo != null)
+        {
+            objetivo.GetComponent<objetivo>().EnObjetivoDestruido -= Detener;
+        }
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -57,7 +60,7 @@ public class EnemigoBase : MonoBehaviour, IAtacante, IAtancable
         if (collision.gameObject.tag == "Objetivo")
         {
             Anim.SetBool("isMoving", false);
-            Anim.SetTrigger("intObjetiveReache", 1);
+            Anim.SetTrigger("intObjetiveReache");
         }
     }
 
